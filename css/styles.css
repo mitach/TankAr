@@ -18,8 +18,8 @@ html {
     position: relative;
     width: 100vw;
     height: 100vh;
-    /* height: 80vh; */
-    background-image: url('./images/bg3.jpg');
+    height: 85vh;
+    background-image: linear-gradient(to top,#000000 1%, rgba(255, 255, 255, 0)), url('../images/backgrounds/bg3.jpg');
     background-size: cover;
     background-position: center;
     padding: 50px;
@@ -31,7 +31,7 @@ html {
     left: 0;
     width: 100vw;
     height: 100vh;
-    /* height: 80vh; */
+    height: 85vh;
     background-color: rgba(0, 0, 0, 0.3);
     order: -1;
 }
@@ -85,7 +85,6 @@ header .navigation li a:hover {
 }
 /* ^ Header > logo + nav ^ */
 
-
 div.content-box {
     position: absolute;
     top: 50%;
@@ -108,11 +107,67 @@ div.content-box p {
     color: #fff;
 }
 
-
-
-
-
-.overview-mid {
+.expanding-cards {
     width: 100vw;
     height: 100vh;
+    background: linear-gradient(to bottom, #000000 1%, rgba(255, 255, 255, 0));
+}
+
+.expanding-cards .container {
+    margin: 0 auto;
+    display: flex;
+    width: 90vw;
+    justify-self: center;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.55;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.first {
+    background-image: url('../images/expanding-cards/mark-one.jpg');
+}
+
+.second {
+    background-image: url('../images/expanding-cards/renault-ft.jpg');
+}
+
+.third {
+    background-image: url('../images/expanding-cards/tiger-ii.jpg');
+}
+
+.fourth {
+    background-image: url('../images/expanding-cards/a7v.jpg');
+}
+
+.fifth {
+    background-image: url('../images/expanding-cards/tsar-tank.jpg');
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 4;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
 }
