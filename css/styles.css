@@ -19,7 +19,8 @@ html {
     width: 100vw;
     height: 100vh;
     height: 85vh;
-    background-image: linear-gradient(to top,#000000 1%, rgba(255, 255, 255, 0)), url('../images/backgrounds/bg3.jpg');
+    background-image: linear-gradient(to top,#000 1%, rgba(255, 255, 255, 0)), url('../images/backgrounds/bg3.jpg');
+    /* background-image: url('../images/backgrounds/bg3.jpg'); */
     background-size: cover;
     background-position: center;
     padding: 50px;
@@ -57,7 +58,7 @@ header .logo {
 }
 
 .red {
-    color: rgb(187, 60, 60);;
+    color: rgb(187, 60, 60);
 }
 
 header .navigation {
@@ -107,10 +108,12 @@ div.content-box p {
     color: #fff;
 }
 
+/* v Expanding cards v */
+
 .expanding-cards {
     width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to bottom, #000000 1%, rgba(255, 255, 255, 0));
+    height: 80vh;
+    background: linear-gradient(to bottom, #000 1%, #222933);
 }
 
 .expanding-cards .container {
@@ -171,3 +174,63 @@ div.content-box p {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
 }
+
+/* ^ Expanding cards ^ */
+
+/* v Assortments v */
+
+.assortments {
+    width: 100vw;
+    height: 80vh;
+    background-image: linear-gradient(to bottom,#222933 1%, rgba(255, 255, 255, 0)), url('../images/backgrounds/bg1.jpg');
+    background-size: cover;
+
+}
+
+.assortments .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.wrapper .archive, 
+.wrapper .gallery,
+.wrapper .interesting {
+    background-color: rgba(230, 230, 230, 0.1);
+    border-radius: 3px;
+    font-weight: bold;
+    color: #fff;
+    padding: 8px;
+    width: 40%;
+    height: 210px;
+    position: relative;
+}
+
+.wrapper h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    background-color: rgb(187, 60, 60);
+    padding: 10px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.wrapper .interesting {
+    background-color: rgba(230, 230, 230, 0.65);
+    color: black;
+}
+
+/* ^ Assortments ^ */
