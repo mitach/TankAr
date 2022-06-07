@@ -12,7 +12,8 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-.overview-top {
+/* v Header Section v */
+.header {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -36,7 +37,6 @@ html {
     order: -1;
 }
 
-/* v Header > logo + nav v */
 header {
     position: relative;
     padding: 0 80px;
@@ -83,8 +83,6 @@ header .navigation li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* ^ Header > logo + nav ^ */
-
 div.content-box {
     position: absolute;
     top: 50%;
@@ -107,8 +105,7 @@ div.content-box p {
     color: #fff;
 }
 
-/* v Expanding cards v */
-
+/* v Expanding Cards Setion v */
 .expanding-cards {
     width: 100vw;
     height: 80vh;
@@ -174,10 +171,7 @@ div.content-box p {
     transition: opacity 0.3s ease-in 0.4s;
 }
 
-/* ^ Expanding cards ^ */
-
 /* v Assortments v */
-
 .assortments {
     width: 100vw;
     height: 80vh;
@@ -232,10 +226,7 @@ div.content-box p {
     color: black;
 }
 
-/* ^ Assortments ^ */
-
 /* v Footer v */
-
 footer {
     padding: 20px;
     background-color: #000;
