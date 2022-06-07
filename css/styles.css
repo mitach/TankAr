@@ -19,14 +19,14 @@ html {
     width: 100vw;
     height: 100vh;
     height: 85vh;
-    background-image: linear-gradient(to top,#000 1%, rgba(255, 255, 255, 0)), url('../images/backgrounds/bg3.jpg');
+    background-image: linear-gradient(to top, #000 1%, rgba(255, 255, 255, 0)), url('../images/backgrounds/bg3.jpg');
     /* background-image: url('../images/backgrounds/bg3.jpg'); */
     background-size: cover;
     background-position: center;
     padding: 50px;
 }
 
-.filter  {
+.filter {
     position: absolute;
     top: 0;
     left: 0;
@@ -53,7 +53,7 @@ header .logo {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight:900;
+    font-weight: 900;
     color: #fff
 }
 
@@ -84,6 +84,7 @@ header .navigation li a:hover {
     color: rgb(187, 60, 60);
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 /* ^ Header > logo + nav ^ */
 
 div.content-box {
@@ -182,7 +183,7 @@ div.content-box p {
 .assortments {
     width: 100vw;
     height: 80vh;
-    background-image: linear-gradient(to bottom,#222933 1%, rgba(255, 255, 255, 0)), url('../images/backgrounds/bg1.jpg');
+    background-image: linear-gradient(to bottom, #222933 1%, rgba(255, 255, 255, 0)), url('../images/backgrounds/bg1.jpg');
     background-size: cover;
 
 }
@@ -197,7 +198,7 @@ div.content-box p {
     margin: auto;
 }
 
-.wrapper .archive, 
+.wrapper .archive,
 .wrapper .gallery,
 .wrapper .interesting {
     background-color: rgba(230, 230, 230, 0.1);
@@ -234,3 +235,18 @@ div.content-box p {
 }
 
 /* ^ Assortments ^ */
+
+/* v Footer v */
+
+footer {
+    padding: 20px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(187, 60, 60);
+}
