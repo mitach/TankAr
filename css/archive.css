@@ -15,8 +15,10 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #222;
     padding-bottom: 50px;
+    background-color: rgb(86, 86, 86);
 }
 
+/* v Navigation v */
 nav {
     display: fixed;
     background-color: #222;
@@ -80,4 +82,77 @@ h2:hover a {
 
 h2:hover span {
     color: #fff
+}
+
+nav ul .current {
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+/* v Articles v */
+.archive-wrapper {
+    display: flex;
+}
+
+.archive-articles {
+    display: flex;
+    width: 70vw;
+    height: 100vh;
+    margin: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.1);
+}
+
+article {
+    margin: 20px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+article .texts {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+article h2 {
+    margin-left: 50px;
+}
+
+article p {
+    margin-left: 20px;
+}
+
+article img {
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+article a {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: rgb(187, 60, 60);
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+}
+
+article a:hover {
+    color: black;
+    background-color: rgba(187, 60, 60, 0.8);
+    transition: all .3s ease-in-out;
+}
+
+/* v Aside v */
+aside {
+    width: 30vw;
+    height: 50vh;
+    margin: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.1);
 }
