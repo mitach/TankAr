@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    padding-bottom: 50px;
+}
+
+nav {
+    display: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+}
+
+.nav .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all .3s ease-in-out;
+}
+
+.nav h2 {
+    font-size: 2rem;
+}
+
+.red {
+    color: rgb(187, 60, 60);
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 15px;
+    transition: all .3s ease-in-out;
+}
+
+.nav span {
+    transition: all .3s ease-in-out;
+}
+
+.nav ul a {
+    margin-left: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav ul a:hover {
+    color: rgb(187, 60, 60);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h2:hover a {
+    color: rgb(187, 60, 60);
+}
+
+h2:hover span {
+    color: #fff
+}
