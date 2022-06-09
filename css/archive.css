@@ -96,17 +96,19 @@ nav ul .current {
 
 .archive-articles {
     display: flex;
+    flex-direction: column;
     width: 70vw;
-    height: 100vh;
+    height: auto;
     margin: 10px 20px;
     background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
 }
 
 article {
     margin: 20px;
+    height: 200px;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(35deg,rgba(255, 255, 255, 0.2) 60%, rgba(245, 225, 235, 0.5));
     border-radius: 10px;
 }
 
@@ -115,31 +117,48 @@ article .texts {
     flex-direction: column;
     position: relative;
 }
+article img {
+    object-fit: cover;
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 
 article h2 {
-    margin-left: 50px;
+    padding: 10px 20px;
+    color: #fff;
 }
 
 article p {
-    margin-left: 20px;
+    text-indent: 30px;
+    padding: 0 20px;
+    font-weight: 500;
+    justify-self: center;
 }
 
-article img {
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+article .button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 article a {
     text-decoration: none;
     color: #fff;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
     background-color: rgb(187, 60, 60);
     border-radius: 50px;
     transition: all .3s ease-in-out;
+}
+
+article:hover img {
+    filter: blur(1px);
 }
 
 article a:hover {
@@ -148,11 +167,69 @@ article a:hover {
     transition: all .3s ease-in-out;
 }
 
+.paginator {
+    align-self: flex-end;
+    margin: 5px 20px 20px;
+}
+.paginator p {
+  display: inline;
+}
+
+.paginator a {
+    text-decoration: none;
+    padding: 0 8px;
+    margin: 5px;
+    color: aliceblue;
+    background-color: #333;
+    border-radius: 50px;
+}
+
+.paginator a.curr {
+    color: #000;
+    background-color: #999;
+}
+
 /* v Aside v */
 aside {
     width: 30vw;
-    height: 50vh;
+    height: 70vh;
     margin: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
+
+aside .aside-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+aside .aside-wrapper h2 {
+    text-align: center;
+    color: #fff ;
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(160, 160, 160);
+}
+
+aside .aside-wrapper a {
+    text-decoration: none;
+    color: #ddd;
+    font-family: monospace, sans-serif;
+    font-weight: lighter;
+}
+
+.latest-posts article,
+.popular-posts article {
+    width: 25vw;
+    height: auto;
+    padding: 5px;
+    background: linear-gradient(35deg,rgba(255, 255, 255, 0.2) 60%, rgba(0, 0, 0, 0.5));
+    box-shadow: 0 0 5px 1px black;
+    border-radius: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.popular-posts {
+    height: 50%;
+}
+
