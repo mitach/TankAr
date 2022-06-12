@@ -14,7 +14,6 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     color: #222;
-    padding-bottom: 50px;
     background-color: rgb(86, 86, 86);
     background-image: url('../images/backgrounds/bg4.jpg');
     background-position: center;
@@ -247,3 +246,20 @@ aside .aside-wrapper a {
     height: 50%;
 }
 
+/* v Footer v */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(187, 60, 60);
+    background-color: #fff;
+    padding: 0 2px;
+    border-radius: 3px;
+}
